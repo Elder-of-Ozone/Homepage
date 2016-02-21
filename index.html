@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Home Page</title>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		</head>
+		<body>
+			<div class="searchContainer">
+				<form class="searchForm" method="get" target="_blank" action="http://us4.startpage.com/do/search">
+					<input class="searchBar google" type="text" name="q" placeholder="Startpage search"/>
+				</form>
+			</div>
+			<ul class="border">
+				<li><a class="parent1" href=#">Work</a>
+					<ul class="subMenu">
+						<li><a class="tab1" href="http://modflowpy.github.io/flopydoc/">FloPy Doc</a></li>
+						<li><a class="tab1" href="https://github.com/modflowpy/flopy">FloPy Github</a></li>
+					</ul>
+				</li>
+				<li><a class="parent2" href="#">Reddit</a>
+					<ul class="subMenu">
+						<li><a class="tab2" href="https://reddit.com/r/Australia">Australia</a></li>
+						<li><a class="tab2" href="https://reddit.com/r/linuxmasterrace">Linux Master Race</a></li>
+						<li><a class="tab2" href="https://reddit.com/r/unixporn">Unix Porn</a></li>
+						<li><a class="tab2" href="https://reddit.com/r/worldnews">World News</a></li>
+						<li><a class="tab2" href="https://reddit.com/r/trees">Trees</a></li>
+					</ul>				
+				</li>
+				<li><a class="parent3" href="https://news.ycombinator.com">Hacker News</a>
+				</li>
+				<li><a class="parent4" href="#">Mail</a>
+					<ul class="subMenu">
+						<li><a class="tab4" href="https://webmail.iinet.net.au">iinet</a></li>
+						<li><a class="tab4" href="https://gmail.com">Gmail</a></li>
+						<li><a class="tab4" href="http://webmail.uwa.edu.au">UWA</a></li>
+					</ul>
+				</li>
+				<li><a class="parent5" href="#">News</a>
+					<ul class="subMenu">
+						<li><a class="tab5" href="http://www.smh.com.au">Sydney Morning Herald</a></li>
+						<li><a class="tab5" href="http://abc.com.au">ABC News</a></li>
+					</ul>
+				</li>
+				<li><a class="parent6" href="#">Torrents</a>
+					<ul class="subMenu">
+						<li><a class="tab6" href="http://thepiratebay.com">Pirate Bay</a></li>	
+						<li><a class="tab6" href="http://kat.cr">Kickass Torrents</a></li>
+					</ul>
+				</li>
+				<li><a class="parent7" href="#">Misc</a>
+					<ul class="subMenu">
+						<li><a class="tab7" href="https://pomf.se">Pomf</a></li>
+						<li><a class="tab7" href="https://plug.dj/r-trees-music">Trees</a></li>
+						<li><a class="tab7" href="https://imgur.com">Imgur</a></li>
+					</ul>
+				</li>
+			</ul>
+				<script>
+					$('.subMenu').hide();
+					$("li:has(ul)").click(function(){
+					$("ul",this).slideToggle('slow');
+					});
+				</script>
+		</body>
+	</html>
